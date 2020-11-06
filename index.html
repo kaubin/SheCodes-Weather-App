@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bc8e9104f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md-6 mb-4">
+        <form class="form-inline mr-auto mb-4" id="search-form">
+          <input
+          id = "city-search"  
+          class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+      <h1 id="city">PARIS</h1>
+      <p id="date">Tuesday, 8:42 PM <br />CET</p>
+      <div class="row" class="main">
+        <div class="col-4">
+          <span class="celcius"> <span id = "temp-celcius">24</span>°C</span> <br />
+          <span class="farenheight"> <span id = "temp-farenheight">66</span>°F</span>
+        </div>
+        <div class="col-4">
+          <i class="fas fa-cloud-sun fa-5x"></i>
+          <br />
+          <span class="conditions" id ="conditions">Clear</span>
+        </div>
+        <div class="col-4">
+          <span class="info"
+            >
+            Wind: <span id="wind">4</span> km/hr <br />
+            Humidity: <span id="humidity">68</span>%
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">Sunday <br /><span class="date">Oct 4</span></div>
+        <div class="col-3">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col-3">high: 26°C</div>
+        <div class="col-3">low: 16°C</div>
+      </div>
+      <div class="row">
+        <div class="col-3">Monday <br /><span class="date">Oct 5</span></div>
+        <div class="col-3">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="col-3">high: 23°C</div>
+        <div class="col-3">low: 12°C</div>
+      </div>
+      <div class="row">
+        <div class="col-3">Tuesday <br /><span class="date">Oct 6</span></div>
+        <div class="col-3">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <div class="col-3">high: 19°C</div>
+        <div class="col-3">low: 10°C</div>
+      </div>
+      <div class="row">
+        <div class="col-3">Wednesday <br /><span class="date">Oct 7</span></div>
+        <div class="col-3">
+          <i class="fas fa-cloud-sun"></i>
+        </div>
+        <div class="col-3">high: 21°C</div>
+        <div class="col-3">low: 13°C</div>
+      </div>
+      <div class="row">
+        <div class="col-3">Thursday <br /><span class="date">Oct 8</span></div>
+        <div class="col-3">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <div class="col-3">high: 17°C</div>
+        <div class="col-3">low: 9°C</div>
+      </div>
+      <div class="row">
+        <div class="col-3">Friday <br /><span class="date">Oct 9</span></div>
+        <div class="col-3">
+          <i class="fas fa-cloud-sun"></i>
+        </div>
+        <div class="col-3">high: 18°C</div>
+        <div class="col-3">low: 8°C</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
