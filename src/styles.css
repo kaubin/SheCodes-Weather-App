@@ -1,0 +1,41 @@
+h1 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  color: black;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  line-height: 1;
+}
+i {
+  font-size: 32px;
+}
+.form-control {
+  font-family: "Lobster", cursive;
+  padding: 20px;
+  margin: 40px;
+}
+.row {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+.main {
+  padding: 40px;
+}
+.date {
+  font-size: 12px;
+}
+.celcius {
+  font-size: 36px;
+  font-family: "Lobster", cursive;
+}
+.farenheight {
+  font-size: 14px;
+  font-family: "Lobster", cursive;
+}
+.info {
+  font-size: 16px;
+  font-family: "Lobster", cursive;
+}
