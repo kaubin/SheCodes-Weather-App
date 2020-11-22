@@ -25,6 +25,7 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#conditions").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 function search(event) {
@@ -36,3 +37,4 @@ function search(event) {
 }
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
+
