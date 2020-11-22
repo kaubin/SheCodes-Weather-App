@@ -14,9 +14,9 @@ i {
 .weather-app {
   border: 1px solid black;
   border-radius: 4px;
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 800px;
-  padding: 5px;
+  padding: 20px;
 }
 .form-control {
   font-family: "Lobster", cursive;
