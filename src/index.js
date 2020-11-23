@@ -19,6 +19,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#temp-celcius").innerHTML = Math.round(
     response.data.main.temp
   );
+  document.querySelector("#temp-farenheight").innerHTML = Math.round(((response.data.main.temp) * 9) / 5 + 32);
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
